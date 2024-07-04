@@ -4536,6 +4536,10 @@ PrefabInstance:
       propertyPath: marshmallowStick
       value: 
       objectReference: {fileID: 833544558}
+    - target: {fileID: 5385065600682438435, guid: d28508053983e574c9043c10e8161f8e, type: 3}
+      propertyPath: initialVelocity.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5385065600682438436, guid: d28508053983e574c9043c10e8161f8e, type: 3}
       propertyPath: suggestedActionsTextMeshPro
       value: 
@@ -4590,6 +4594,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5385065600682438439, guid: d28508053983e574c9043c10e8161f8e, type: 3}
       propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7281722163792596008, guid: d28508053983e574c9043c10e8161f8e, type: 3}
+      propertyPath: alternativeRotate
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7281722163792596008, guid: d28508053983e574c9043c10e8161f8e, type: 3}
+      propertyPath: toggleCursorLock
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []

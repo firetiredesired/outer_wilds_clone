@@ -72,8 +72,16 @@ namespace PlayerLogic
 
         private void ProcessRotationInput()
         {
-            rotation.x = Input.GetAxis("Mouse X");
-            rotation.y = Input.GetAxis("Mouse Y");
+            float mouseX = Input.GetAxis("Mouse X");
+            float mouseY = Input.GetAxis("Mouse Y");
+
+            // Optionally clamp the mouse movement to prevent too rapid changes
+            const float maxDelta = 0.5f; // Adjust based on your needs
+            mouseX = Mathf.Clamp(mouseX, -maxDelta, maxDelta);
+            mouseY = Mathf.Clamp(mouseY, -maxDelta, maxDelta);
+
+            // Update rotation vector
+            rotation = new Vector2(mouseX, mouseY);
 
             alternativeRotate = Input.GetKey(KeyCode.R);
         }
